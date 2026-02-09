@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 {
+	color: #123123;
+	background-color: #298734;
+	font-size: 11px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	margin: inherit;
+	padding: 50px;
+	border: ridge;
+}
+
+h2 {
+	color: #209388;
+	background-color: #102938;
+	font-size: 200px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: auto;
+	padding: 1px;
+	border: medium;
+}
+
+h3 {
+	color: #122932;
+	background-color: #405986;
+	font-size: 100px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	margin: inherit;
+	padding: 1000px;
+	border: none;
+}
+
+p {
+	color: #999900;
+	background-color: #1111000;
+	font-size: 1px;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	margin: auto;
+	padding: 10px;
+	border: thin;
+}
+
+a {
+	color: #676767;
+	background-color: #767676;
+	font-size: 43px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	margin: inherit;
+	padding: 500px;
+	border: dashed;
+}
+
+body {
+	color: #990000;
+	background-color: #990000;
+	font-size: 1000px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	margin: inherit;
+	padding: 2px;
+	border: dotted
+}
+
+img {
+	width: 1000px;
+	height: 10px;
+	display: block;
+	border-radius: 50%;
+}
