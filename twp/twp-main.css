@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #111111;
+    background: #aaaaaa;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 20px;
+    line-height: 150%;  /* adjust as needed */	
+}
+
+.wrapper {
+    background: #ffffff;
+    width: 1000px;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 20px 40px;
+}
+
+table.inventory {
+  border-collapse: collapse;
+  border: 3px solid black;   /* ← This creates the table outline */
+}
+
+table.inventory th,
+table.inventory td{
+  border: 1.5px;
+  padding: 10px 14px;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 1.1;
+}
+
+table.inventory tbody tr:nth-child(odd){
+  background: #aaaaaa;
+}
+
+table.inventory tbody tr:nth-child(even){
+  background: #bbbbbb;
+}
