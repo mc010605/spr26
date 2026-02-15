@@ -5,10 +5,19 @@ body {
     margin: 0;
     padding: 0;
     color: #111111;
-    background: #aaaaaa;
+    background: #0D5E30;
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     font-size: 20px;
     line-height: 150%;  /* adjust as needed */	
+}
+
+h1 {
+	background: #59CF66;
+}
+
+.hyperlink {
+	color: darkorchid;
+	text-decoration: none;
 }
 
 .wrapper {
@@ -20,7 +29,7 @@ body {
 }
 
 .site-header {
-    background-color: #aaaaaa;
+    background-color: #0B9946;
     padding: 12px 0;
     text-align: center;
     border: 3px solid #444;
