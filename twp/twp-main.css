@@ -14,13 +14,38 @@ h1 {
 	background: #59CF66;
 }
 
-.hyperlink {
-	color: darkorchid;
+.site-link{
+	color:#154B10;
+	font-size:1rem;
+	text-decoration:none;
+	font-weight:600;
+}
+
+.site-link:hover{
+	text-decoration:underline;
+	background-color: yellow;
+}
+
+.page-link{
+	background:#59CF66;
+	color:#111;
+	text-decoration:none;
+	padding:4px 10px;
+	border-radius:4px;
+	font-size:0.9rem;
+}
+
+.page-link:hover{
+	background:#3fb54a;
+}
+
+.text-link{
+	color:darkorchid;
 	text-decoration: none;
 }
 
-.hyperlink:hover {
-	text-decoration: underline;
+.text-link:hover{
+	color:yellowgreen;
 }
 
 .wrapper {
@@ -33,42 +58,55 @@ h1 {
 }
 
 .site-header {
-	background-color: #0B9946;
-	border: 3px solid #444;
-	padding: 12px 16px;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 18px;
+  background-color: #ffffff;
+  border: 3px solid #444;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
 }
 
-.site-logo {
-	display: inline-flex;
-	align-items: center;
-	gap: 10px;
-	color: #111111;
-	font-weight: 700;
-	letter-spacing: 0.4px;
-	text-decoration: none;
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: #111111;
+  flex: 1;
+  min-width: 0;
 }
 
-.site-logo i {
-	font-size: 26px;
+.site-logo-image {
+  width: 150px;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
 }
 
-.sitenav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 18px;
+.site-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: nowrap;
 }
 
-.site-header .sitenav a {
-	color: #111111;
-	font-weight: 500;
-	font-size: 20px;
-	letter-spacing: 0.5px;
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-shrink: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #111111;
+}
+
+.site-nav a:hover,
+.logo-area:hover .site-title {
+  text-decoration: underline;
 }
 
 .page-nav {
@@ -81,6 +119,10 @@ h1 {
 .page-header h1 {
 	border: 3px solid #444;
 	padding: 10px;
+}
+
+.page-header h1 span {
+	font-size: 20px;
 }
 
 .gallery-grid {
@@ -100,6 +142,7 @@ h1 {
 
 .table-wrap {
 	overflow-x: auto;
+	width: 100%;
 }
 
 table.inventory {
@@ -119,6 +162,7 @@ table.inventory td {
 
 table.inventory thead th {
 	background: #59CF66;
+	text-align: left;
 }
 
 table.inventory tbody tr:nth-child(odd) {
@@ -129,6 +173,9 @@ table.inventory tbody tr:nth-child(even) {
 	background: #bbbbbb;
 }
 
+.drawing {
+	text-align: center;
+}
 .mode {
 	font-size: 22px;
 }
@@ -156,6 +203,18 @@ table.inventory tbody tr:nth-child(even) {
 
 .icon-legend i {
 	margin-right: 8px;
+}
+
+footer{
+  width: 1000px;
+  height: 20px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 41px;
+  background-color: #040303;
+  color: #FFFFFF;
+  display: flex;
 }
 
 @media (max-width: 600px) {
