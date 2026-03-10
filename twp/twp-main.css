@@ -84,7 +84,7 @@ h1 {
   flex-shrink: 0;
 }
 
-.supp-photo{
+.supp-photo {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -239,6 +239,7 @@ footer{
 		align-items: flex-start;
 	}
 }
+
 
 
 
