@@ -84,6 +84,12 @@ h1 {
   flex-shrink: 0;
 }
 
+.supp-photo img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .site-title {
   font-size: 2rem;
   font-weight: 700;
@@ -233,4 +239,5 @@ footer{
 		align-items: flex-start;
 	}
 }
+
 
