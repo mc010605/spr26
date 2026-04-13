@@ -255,7 +255,7 @@ tr:hover td {
   border-radius: 8px;
   margin-bottom: 16px;
   object-fit: cover;
-  max-height: 220px;
+  max-height: 300px;
 }
 
 .review-meta {
