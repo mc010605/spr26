@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=DM+Serif+Display&display=swap');
 
-/* ── Reset & Base ─────────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -17,7 +16,6 @@ body {
   font-size: 16px;
 }
 
-/* ── Site Header ──────────────────────────────────────────── */
 .site-header {
   display: flex;
   align-items: center;
@@ -44,7 +42,6 @@ body {
   display: block;
 }
 
-/* ── Site Navigation ──────────────────────────────────────── */
 .sitenav {
   display: flex;
   align-items: center;
@@ -75,7 +72,6 @@ body {
   background-color: rgba(255,255,255,0.12);
 }
 
-/* ── Page Wrapper ─────────────────────────────────────────── */
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
@@ -84,7 +80,6 @@ body {
   min-height: calc(100vh - 72px - 80px);
 }
 
-/* ── Page Header ──────────────────────────────────────────── */
 h1 {
   font-family: 'DM Serif Display', Georgia, serif;
   text-align: center;
@@ -124,7 +119,6 @@ h3 {
   letter-spacing: 0.05em;
 }
 
-/* ── Page Navigation ──────────────────────────────────────── */
 .page-nav {
   text-align: center;
   background-color: #eaf3fb;
@@ -153,7 +147,6 @@ h3 {
   text-decoration: none;
 }
 
-/* ── Sections ─────────────────────────────────────────────── */
 section {
   margin-bottom: 48px;
 }
@@ -173,7 +166,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ── Gallery ──────────────────────────────────────────────── */
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -207,7 +199,6 @@ a:hover {
   box-shadow: 0 6px 20px rgba(11, 31, 58, 0.15);
 }
 
-/* ── Table ────────────────────────────────────────────────── */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -239,7 +230,6 @@ tr:hover td {
   background-color: #f5faff;
 }
 
-/* ── Reviews — 2-column layout ────────────────────────────── */
 .reviews-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -282,21 +272,18 @@ tr:hover td {
   color: #e6a817;
 }
 
-/* ── Highlight ────────────────────────────────────────────── */
 .highlight {
   background-color: #fff9c4;
   padding: 1px 3px;
   border-radius: 3px;
 }
 
-/* ── HR Divider ───────────────────────────────────────────── */
 hr {
   border: none;
   border-top: 2px solid #c9def2;
   margin: 40px 0;
 }
 
-/* ── Site Footer ──────────────────────────────────────────── */
 .site-footer {
   background-color: #0b1f3a;
   color: #8baec9;
@@ -321,7 +308,6 @@ hr {
   margin: 0 auto;
 }
 
-/* ── Responsive ───────────────────────────────────────────── */
 @media (max-width: 780px) {
   .reviews-grid {
     grid-template-columns: 1fr;
