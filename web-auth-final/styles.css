@@ -342,8 +342,8 @@ hr {
 	background: url(images/body.svg) no-repeat;
 	background-size: 900px 600px;
 	padding: 0;
-	margin: 0; /* adjust as needed */
-	position: relative; /* needed for positioning the icons */
+	margin: auto; /* adjust as needed */
+	positio: relative; /* needed for positioning the icons */
 }
 
 
