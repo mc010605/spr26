@@ -345,3 +345,35 @@ hr {
 	margin: 0; /* adjust as needed */
 	position: relative; /* needed for positioning the icons */
 }
+
+.worldmap-item {
+    position: absolute;
+    color: #3b78b7;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.worldmap-item span {
+    display: none;
+    position: absolute;
+    left: 25px;
+    top: 0;
+    background: #0b1f3a;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-family: 'Figtree', sans-serif;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.worldmap-item:hover span {
+    display: block;
+}
+
+#item-hypothalamus { top: 115px; left: 450px; }
+#item-thyroid      { top: 165px; left: 455px; }
+#item-heart        { top: 235px; left: 440px; }
+#item-stomach      { top: 310px; left: 460px; }
+#item-muscles      { top: 450px; left: 405px; }
