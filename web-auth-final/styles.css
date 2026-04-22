@@ -339,7 +339,7 @@ hr {
 	width: 900px;
 	height: 600px;
 	border: solid #5a5a5a 1px;
-	background: url(images/worldmap.svg) no-repeat;
+	background: url(images/body.svg) no-repeat;
 	background-size: 900px 600px;
 	padding: 0;
 	margin: 0; /* adjust as needed */
