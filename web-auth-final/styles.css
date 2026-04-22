@@ -336,14 +336,15 @@ hr {
 }
 
 .worldmap {
-	width: 900px;
-	height: 600px;
-	border: solid #5a5a5a 1px;
-	background: url(images/body.svg) no-repeat;
-	background-size: 900px 600px;
-	padding: 0;
-	margin: auto; /* adjust as needed */
-	positio: relative; /* needed for positioning the icons */
+    width: 900px;
+    height: 600px;
+    border: solid #5a5a5a 1px;
+    background: url(images/body.svg) no-repeat;
+    background-size: 900px 600px;
+    background-position: center; 
+    padding: 0;
+    margin: 0;
+    position: relative;
 }
 
 
