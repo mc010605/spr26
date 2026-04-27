@@ -375,3 +375,57 @@ hr {
 #item-heart        { top: 238px; left: 443px; }
 #item-stomach      { top: 313px; left: 463px; }
 #item-muscles      { top: 453px; left: 408px; }
+
+.section-standard {
+    margin-bottom: 60px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.profile-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #c9def2;
+}
+
+.contributor-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.timeline-container h3 {
+    border-left: 4px solid #3b78b7;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    color: #0b1f3a;
+}
+
+.timeline-container div {
+    margin-left: 20px;
+    padding-bottom: 20px;
+    border-left: 1px solid #c9def2;
+    padding-left: 20px;
+}
+
+.timeline-container div:last-child {
+    border-left: none;
+}
+
+@media (max-width: 780px) {
+    .contributor-entry {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-container {
+        text-align: center;
+    }
+}
