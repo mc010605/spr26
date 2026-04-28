@@ -360,13 +360,13 @@ hr {
 }
 
 .worldmap-item i {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #3b78b7;
-  font-size: 20px;
+  font-size: 28px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -377,20 +377,9 @@ hr {
   filter: drop-shadow(0 0 8px rgba(59, 120, 183, 0.6));
 }
 
-.worldmap-item::before {
-  content: '';
-  position: absolute;
-  width: 2px;
-  background-color: #3b78b7;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all 0.3s ease;
-}
-
 .worldmap-item .label {
   position: absolute;
-  top: -35px;
+  top: -40px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #0b1f3a;
@@ -404,56 +393,54 @@ hr {
   opacity: 0;
   transition: opacity 0.3s ease, top 0.3s ease;
   pointer-events: none;
+  z-index: 10;
 }
 
 .worldmap-item:hover .label {
   opacity: 1;
-  top: -50px;
+  top: -55px;
 }
 
-#item-hypothalamus {
-  top: 15%;
+/* Brain - top of head */
+#item-brain {
+  top: 12%;
   left: 50%;
 }
 
-#item-hypothalamus::before {
-  height: 50px;
-}
-
+/* Thyroid - neck/throat area */
 #item-thyroid {
-  top: 22%;
+  top: 24%;
   left: 50%;
 }
 
-#item-thyroid::before {
-  height: 60px;
-}
-
+/* Heart - upper chest */
 #item-heart {
-  top: 33%;
+  top: 36%;
   left: 50%;
 }
 
-#item-heart::before {
-  height: 70px;
+/* Liver - right side of abdomen */
+#item-liver {
+  top: 42%;
+  left: 62%;
 }
 
+/* Stomach - center of abdomen */
 #item-stomach {
-  top: 45%;
+  top: 48%;
   left: 50%;
 }
 
-#item-stomach::before {
-  height: 80px;
+/* Pancreas - lower abdomen */
+#item-pancreas {
+  top: 54%;
+  left: 48%;
 }
 
+/* Skeletal Muscle - leg area */
 #item-muscles {
-  top: 70%;
-  left: 42%;
-}
-
-#item-muscles::before {
-  height: 120px;
+  top: 75%;
+  left: 45%;
 }
 
 .section-standard {
