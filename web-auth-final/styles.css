@@ -403,44 +403,44 @@ hr {
 
 /* Brain - top of head */
 #item-brain {
-  top: 12%;
-  left: 50%;
+  top: 17.78%;
+  left: 83.33%;
 }
 
 /* Thyroid - neck/throat area */
 #item-thyroid {
-  top: 24%;
-  left: 50%;
+  top: 28.89%;
+  left: 83.33%;
 }
 
 /* Heart - upper chest */
 #item-heart {
-  top: 36%;
-  left: 50%;
+  top: 38.67%;
+  left: 87.33%;
 }
 
 /* Liver - right side of abdomen */
 #item-liver {
-  top: 42%;
-  left: 62%;
+  top: 49.11%;
+  left: 78%;
 }
 
 /* Stomach - center of abdomen */
 #item-stomach {
-  top: 48%;
-  left: 50%;
+  top: 52.22%;
+  left: 83.33%;
 }
 
 /* Pancreas - lower abdomen */
 #item-pancreas {
-  top: 54%;
-  left: 48%;
+  top: 48.89%;
+  left: 83.33%;
 }
 
 /* Skeletal Muscle - leg area */
 #item-muscles {
-  top: 75%;
-  left: 45%;
+  top: 68.89%;
+  left: 74.67%;
 }
 
 .section-standard {
