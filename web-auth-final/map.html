@@ -32,41 +32,69 @@
       <div class="map-container">
         <div class="worldmap">
           <!-- SUPPORT Systems (blue icons) -->
-          <a href="#brain" class="worldmap-item" id="item-brain">
+          <a href="#brain" class="worldmap-item support-system" id="item-brain">
             <i class="fa-solid fa-brain"></i>
             <span class="label">Brain</span>
+            <span class="popup">
+              <strong>Brain</strong><br>
+              The command center of your body, regulating all vital functions including metabolism, appetite, and weight management.
+            </span>
           </a>
           
-          <a href="#thyroid" class="worldmap-item" id="item-thyroid">
+          <a href="#thyroid" class="worldmap-item support-system" id="item-thyroid">
             <i class="fa-solid fa-droplet"></i>
             <span class="label">Thyroid</span>
+            <span class="popup">
+              <strong>Thyroid</strong><br>
+              Produces thyroid hormones that regulate your metabolic rate and energy expenditure.
+            </span>
           </a>
           
-          <a href="#heart" class="worldmap-item" id="item-heart">
+          <a href="#heart" class="worldmap-item support-system" id="item-heart">
             <i class="fa-solid fa-heart"></i>
             <span class="label">Heart</span>
+            <span class="popup">
+              <strong>Heart</strong><br>
+              Pumps oxygenated blood throughout your body to support all metabolic functions.
+            </span>
           </a>
           
-          <!-- DIGESTIVE Systems (green icons) -->
-          <a href="#liver" class="worldmap-item" id="item-liver">
+          <!-- METABOLIC Systems (orange/warm icons) -->
+          <a href="#liver" class="worldmap-item metabolic-system" id="item-liver">
             <i class="fa-solid fa-flask"></i>
             <span class="label">Liver</span>
+            <span class="popup">
+              <strong>Liver</strong><br>
+              Processes nutrients and detoxifies your body, playing a key role in metabolism and fat processing.
+            </span>
           </a>
           
-          <a href="#stomach" class="worldmap-item" id="item-stomach">
+          <a href="#stomach" class="worldmap-item metabolic-system" id="item-stomach">
             <i class="fa-solid fa-utensils"></i>
             <span class="label">Stomach</span>
+            <span class="popup">
+              <strong>Stomach</strong><br>
+              Breaks down food and produces digestive enzymes and hormones that signal fullness.
+            </span>
           </a>
 
-          <a href="#pancreas" class="worldmap-item" id="item-pancreas">
+          <a href="#pancreas" class="worldmap-item metabolic-system" id="item-pancreas">
             <i class="fa-solid fa-bolt"></i>
             <span class="label">Pancreas</span>
+            <span class="popup">
+              <strong>Pancreas</strong><br>
+              Produces insulin and digestive enzymes, regulating blood sugar levels.
+            </span>
           </a>
 
-          <!-- STRUCTURAL Systems (orange icons) -->
-          <a href="#muscles" class="worldmap-item" id="item-muscles">
+          <!-- STRUCTURAL/METABOLIC Systems (orange/warm icons) -->
+          <a href="#muscles" class="worldmap-item metabolic-system" id="item-muscles">
             <i class="fa-solid fa-person"></i>
             <span class="label">Skeletal Muscle</span>
+            <span class="popup">
+              <strong>Skeletal Muscle</strong><br>
+              Provides structure and movement, burns calories at rest (metabolic tissue).
+            </span>
           </a>
         </div>
       </div>
@@ -76,16 +104,12 @@
         <h3>System Categories</h3>
         <div class="legend-items">
           <div class="legend-item">
-            <span class="legend-icon support"><i class="fa-solid fa-brain"></i></span>
+            <span class="legend-icon support-system"><i class="fa-solid fa-brain"></i></span>
             <span class="legend-label">Support Systems</span>
           </div>
           <div class="legend-item">
-            <span class="legend-icon digestive"><i class="fa-solid fa-utensils"></i></span>
-            <span class="legend-label">Digestive Systems</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-icon structural"><i class="fa-solid fa-person"></i></span>
-            <span class="legend-label">Structural Systems</span>
+            <span class="legend-icon metabolic-system"><i class="fa-solid fa-bolt"></i></span>
+            <span class="legend-label">Metabolic & Structural Systems</span>
           </div>
         </div>
       </div>
@@ -167,8 +191,8 @@
       <!-- Liver Profile -->
       <article class="location-profile" id="liver">
         <div class="profile-header">
-          <h3><i class="fa-solid fa-flask digestive-icon"></i> Liver</h3>
-          <span class="system-category digestive-badge">Digestive System</span>
+          <h3><i class="fa-solid fa-flask metabolic-icon"></i> Liver</h3>
+          <span class="system-category metabolic-badge">Metabolic & Structural System</span>
         </div>
         <div class="profile-content">
           <p><strong>Description:</strong> Processes nutrients and detoxifies your body, playing a key role in metabolism and fat processing.</p>
@@ -190,8 +214,8 @@
       <!-- Stomach Profile -->
       <article class="location-profile" id="stomach">
         <div class="profile-header">
-          <h3><i class="fa-solid fa-utensils digestive-icon"></i> Stomach</h3>
-          <span class="system-category digestive-badge">Digestive System</span>
+          <h3><i class="fa-solid fa-utensils metabolic-icon"></i> Stomach</h3>
+          <span class="system-category metabolic-badge">Metabolic & Structural System</span>
         </div>
         <div class="profile-content">
           <p><strong>Description:</strong> Breaks down food and produces digestive enzymes and hormones that signal fullness.</p>
@@ -213,8 +237,8 @@
       <!-- Pancreas Profile -->
       <article class="location-profile" id="pancreas">
         <div class="profile-header">
-          <h3><i class="fa-solid fa-bolt digestive-icon"></i> Pancreas</h3>
-          <span class="system-category digestive-badge">Digestive System</span>
+          <h3><i class="fa-solid fa-bolt metabolic-icon"></i> Pancreas</h3>
+          <span class="system-category metabolic-badge">Metabolic & Structural System</span>
         </div>
         <div class="profile-content">
           <p><strong>Description:</strong> Produces insulin and digestive enzymes, regulating blood sugar levels.</p>
@@ -236,8 +260,8 @@
       <!-- Muscles Profile -->
       <article class="location-profile" id="muscles">
         <div class="profile-header">
-          <h3><i class="fa-solid fa-person structural-icon"></i> Skeletal Muscle</h3>
-          <span class="system-category structural-badge">Structural System</span>
+          <h3><i class="fa-solid fa-person metabolic-icon"></i> Skeletal Muscle</h3>
+          <span class="system-category metabolic-badge">Metabolic & Structural System</span>
         </div>
         <div class="profile-content">
           <p><strong>Description:</strong> Provides structure and movement, burns calories at rest (metabolic tissue).</p>
