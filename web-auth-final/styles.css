@@ -422,7 +422,6 @@ hr {
   transition: all 0.3s ease;
 }
 
-/* Color coding for system types */
 .worldmap-item.support-system i {
   color: #3b78b7;
 }
@@ -441,7 +440,6 @@ hr {
   filter: drop-shadow(0 0 8px rgba(217, 119, 6, 0.6));
 }
 
-/* Popup tooltip styling */
 .worldmap-item .popup {
   position: absolute;
   background-color: #ffffff;
@@ -507,49 +505,41 @@ hr {
   top: -55px;
 }
 
-/* Brain - top of head */
 #item-brain {
   top: 6.67%;
   left: 50%;
 }
 
-/* Thyroid - neck/throat area */
 #item-thyroid {
   top: 17.78%;
   left: 50%;
 }
 
-/* Heart - upper chest */
 #item-heart {
   top: 27.56%;
   left: 54%;
 }
 
-/* Liver - right side of abdomen */
 #item-liver {
   top: 38%;
   left: 44.67%;
 }
 
-/* Stomach - center of abdomen */
 #item-stomach {
   top: 41.11%;
   left: 50%;
 }
 
-/* Pancreas - lower abdomen */
 #item-pancreas {
   top: 37.78%;
   left: 50%;
 }
 
-/* Skeletal Muscle - leg area */
 #item-muscles {
   top: 57.78%;
   left: 41.34%;
 }
 
-/* Location Profiles Section */
 #location-profiles {
   margin-top: 60px;
 }
@@ -661,7 +651,6 @@ hr {
   font-weight: 600;
 }
 
-/* Rating Legend */
 #rating-legend {
   background-color: #eaf3fb;
   padding: 24px;
