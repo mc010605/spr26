@@ -395,6 +395,14 @@ hr {
   color: #d97706;
 }
 
+.worldmap {
+  width: 600px;
+  height: 900px;
+  background: url(images/body.svg) no-repeat center;
+  background-size: 600px 900px;
+  position: relative;
+}
+
 .worldmap-item {
   position: absolute;
   display: block;
