@@ -415,6 +415,7 @@ hr {
   min-height: calc(100vh - 72px - 80px);
   background-color: #ffffff;
   padding: 40px 20px;
+  border: 10px solid #c9def2;
 }
 
 .map-legend {
@@ -461,7 +462,7 @@ hr {
 }
 
 .legend-icon.metabolic-system {
-  color: #d4a500;
+  color: #b91c1c;
 }
 
 .worldmap {
@@ -496,7 +497,7 @@ hr {
 }
 
 .worldmap-item.metabolic-system i {
-  color: #d4a500;
+  color: #b91c1c;
 }
 
 .worldmap-item:hover i {
@@ -506,7 +507,7 @@ hr {
 }
 
 .worldmap-item.metabolic-system:hover i {
-  filter: drop-shadow(0 0 8px rgba(212, 165, 0, 0.6));
+  filter: drop-shadow(0 0 8px rgba(185, 28, 28, 0.6));
 }
 
 .worldmap-item .popup {
@@ -531,7 +532,7 @@ hr {
 }
 
 .worldmap-item.metabolic-system .popup {
-  border-color: #d4a500;
+  border-color: #b91c1c;
 }
 
 .worldmap-item:hover .popup {
@@ -648,7 +649,7 @@ hr {
 }
 
 .metabolic-icon {
-  color: #d4a500;
+  color: #b91c1c;
 }
 
 .system-category {
@@ -669,9 +670,10 @@ hr {
 }
 
 .metabolic-badge {
-  background-color: #ffe8a8;
-  color: #6b4c00;
-  border: 1px solid #d4a500;
+  background-color: #fee2e2;
+  color: #7f1d1d;
+  border: 1px solid #b91c1c;
+}
 }
   border: 1px solid #fdba74;
 }
