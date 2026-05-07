@@ -247,14 +247,33 @@ tr:hover td {
   border-radius: 8px 0 0 8px;
 }
 
+.review-header-section {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 0;
+  align-items: stretch;
+  margin-bottom: 32px;
+  background-color: #f5faff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #d4e6f7;
+}
+
+.review-image {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
 .review-sidebar {
   background-color: #f5faff;
-  border: 1px solid #d4e6f7;
-  border-radius: 0 8px 8px 0;
-  padding: 20px 18px;
+  border: none;
+  border-left: 1px solid #d4e6f7;
+  border-radius: 0;
+  padding: 24px;
   height: auto;
-  position: sticky;
-  top: 80px;
   font-size: 20px;
 }
 
