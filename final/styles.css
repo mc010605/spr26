@@ -897,12 +897,6 @@ hr {
   background-color: #ffffff;
 }
 
-.lead-image {
-  width: 70%;
-  height: 70%;
-  margin: 0;
-}
-
 .lead-text-block {
   background-color: #0b1f3a;
   padding: 48px 40px 36px;
@@ -943,8 +937,7 @@ hr {
   font-size: 1.05rem;
   line-height: 1.8;
   color: #2a3f5c;
-  max-width: 500px;
-  margin: 0 auto 18px;
+  margin: 0 0 18px;
 }
 
 .lead-intro p:last-child {
@@ -955,14 +948,14 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  padding: 0;
+  gap: 48px;
+  padding: 40px 0;
   background-color: #ffffff;
 }
 
 .lead-row .lead-image {
   flex: 0 0 320px;
-  margin: 0;
+  width: 320px;
 }
 
 .lead-row .lead-image img {
@@ -972,9 +965,7 @@ hr {
   display: block;
 }
 .lead-row .lead-intro {
-  max-width: 600px;
-  margin-left: 24px;
-  margin: 0;
+  max-width: 520px;
 }
 
 .showcase-section {
