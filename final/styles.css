@@ -485,14 +485,14 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fc0b03;
+  color: #fcba03;
   font-size: 28px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .worldmap-item.support-system i {
-  color: #fc0b03;
+  color: #fcba03;
 }
 
 .worldmap-item.metabolic-system i {
