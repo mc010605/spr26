@@ -898,8 +898,8 @@ hr {
 }
 
 .lead-image {
-  width: 100%;
-  max-width: 700px;  
+  width: 300px;
+  height: 400px;
   margin: 0 auto;     
 }
 
