@@ -921,7 +921,7 @@ hr {
 
 .showcase-section {
   background-color: #eaf3fb;
-  padding: 56px 0 64px;
+  padding: 56px 40px 64px;
   border-top: 3px solid #c9def2;
 }
 
@@ -1088,13 +1088,10 @@ hr {
 
 .lead-row {
   display: grid;
-  grid-template-columns: 340px 1fr;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
   align-items: center;
-  gap: 60px;
-  padding: 60px 24px;
-  max-width: 1100px;
-  margin: 0 auto;
+  padding: 60px 0;
 }
 
 .lead-row .lead-image {
@@ -1105,22 +1102,24 @@ hr {
 }
 
 .lead-row .lead-image img {
-  width: 340px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 380px;
   height: auto;
   display: block;
   border-radius: 10px;
 }
 
-.lead-row .lead-intro {
-  max-width: 520px;
+.lead-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .lead-intro p {
   font-size: 1.05rem;
   line-height: 1.8;
   color: #2a3f5c;
-  margin: 0 0 16px;
+  margin: 0;
 }
 
 .lead-intro p:last-child {
@@ -1130,12 +1129,11 @@ hr {
 @media (max-width: 780px) {
   .lead-row {
     grid-template-columns: 1fr;
-    text-align: center;
-    gap: 28px;
-    padding: 36px 20px;
+    gap: 32px;
+    padding: 40px 0;
   }
 
-  .lead-row .lead-intro {
+  .lead-row .lead-image img {
     max-width: 100%;
   }
 }
