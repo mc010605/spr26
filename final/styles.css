@@ -226,9 +226,62 @@ tr:hover td {
 
 .reviews-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
   align-items: start;
+}
+
+/* Review header section: image on left, sidebar (metadata + pros/cons) on right */
+.review-header-section {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 28px;
+  align-items: start;
+  margin-bottom: 32px;
+}
+
+.review-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  background-color: #d3e3f3;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Sidebar containing metadata and pros/cons */
+.review-sidebar {
+  background-color: #f5faff;
+  border: 1px solid #d4e6f7;
+  border-radius: 8px;
+  padding: 20px 18px;
+  height: fit-content;
+  position: sticky;
+  top: 80px;
+}
+
+.review-sidebar h3 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.review-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #2a3f5c;
+}
+
+.review-sidebar li {
+  margin-bottom: 8px;
+}
+
+.review-sidebar li:last-child {
+  margin-bottom: 0;
 }
 
 .review-card {
@@ -240,18 +293,8 @@ tr:hover td {
 
 .review-card h1 {
   font-size: 1.6rem;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
   text-align: left;
-}
-
-.review-card img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
-  border-radius: 8px;
-  background-color: #d3e3f3;
-  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .review-meta {
@@ -307,6 +350,16 @@ hr {
 @media (max-width: 780px) {
   .reviews-grid {
     grid-template-columns: 1fr;
+  }
+
+  .review-header-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .review-sidebar {
+    position: static;
+    top: auto;
   }
 
   .gallery-4 {
