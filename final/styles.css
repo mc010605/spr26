@@ -950,6 +950,11 @@ hr {
   background-color: #ffffff;
 }
 
+.lead-row .lead-image,
+.lead-row .lead-intro {
+  flex: 0 1 50%;
+}
+
 .lead-row .lead-image {
   flex: 0 0 320px;
   width: 320px;
