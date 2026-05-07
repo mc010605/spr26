@@ -898,17 +898,11 @@ hr {
 }
 
 .lead-image {
-  width: 300px;
-  height: 400px;
+  width: 70%;
+  height: 70%;
   margin: 0 auto;     
 }
 
-.lead-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-}
 .lead-text-block {
   background-color: #0b1f3a;
   padding: 48px 40px 36px;
