@@ -884,12 +884,6 @@ hr {
     }
 }
 
-.wrapper-narrow {
-  max-width: 1060px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
 .lead-section {
   background-color: #ffffff;
 }
@@ -923,51 +917,6 @@ hr {
   font-weight: 500;
   letter-spacing: 0.02em;
   text-align: center;
-}
-
-.lead-intro {
-  background-color: #ffffff;
-  padding: 0;
-}
-
-.lead-intro p {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #2a3f5c;
-  margin: 0 0 18px;
-}
-
-.lead-intro p:last-child {
-  margin-bottom: 0;
-}
-
-.lead-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 48px;
-  padding: 40px 0;
-  background-color: #ffffff;
-}
-
-.lead-row .lead-image,
-.lead-row .lead-intro {
-  flex: 0 1 50%;
-}
-
-.lead-row .lead-image {
-  flex: 0 0 320px;
-  width: 320px;
-}
-
-.lead-row .lead-image img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-.lead-row .lead-intro {
-  max-width: 520px;
 }
 
 .showcase-section {
@@ -1108,5 +1057,93 @@ hr {
   .lead-text-block {
     padding: 36px 20px 28px;
   }
+
+  /* =========================
+   LEAD SECTION (REBUILT)
+========================= */
+
+.lead-section {
+  background-color: #ffffff;
+}
+
+/* Top hero text block */
+.lead-text-block {
+  background-color: #0b1f3a;
+  padding: 56px 24px 40px;
+  text-align: center;
+}
+
+.lead-primary {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
+  color: #ffffff;
+  margin: 0 0 12px;
+  line-height: 1.15;
+  font-weight: 400;
+}
+
+.lead-primary em {
+  color: #5ba4e0;
+  font-style: italic;
+}
+
+.lead-secondary {
+  font-family: 'Figtree', Arial, sans-serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #c9def2;
+  margin: 0;
+  font-weight: 500;
+}
+
+.lead-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  padding: 56px 24px;
+  flex-wrap: wrap;
+}
+
+.lead-row .lead-image {
+  flex: 0 1 340px;
+  display: flex;
+  justify-content: center;
+}
+
+.lead-row .lead-image img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.lead-row .lead-intro {
+  flex: 1 1 420px;
+  max-width: 520px;
+}
+
+.lead-intro p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #2a3f5c;
+  margin: 0 0 16px;
+}
+
+.lead-intro p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 780px) {
+  .lead-row {
+    gap: 28px;
+    padding: 36px 20px;
+    text-align: center;
+  }
+
+  .lead-row .lead-intro {
+    max-width: 100%;
+  }
+}
 
 }
