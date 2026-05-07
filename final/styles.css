@@ -890,7 +890,7 @@ hr {
 .wrapper-narrow {
   max-width: 1060px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 10px;
 }
 
 .lead-section {
@@ -900,8 +900,7 @@ hr {
 .lead-image {
   width: 70%;
   height: 70%;
-  margin: 0 auto;   
-  padding-left: 40px;
+  margin: 0 auto;
 }
 
 .lead-text-block {
