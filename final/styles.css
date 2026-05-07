@@ -1057,16 +1057,11 @@ hr {
   .lead-text-block {
     padding: 36px 20px 28px;
   }
-
-  /* =========================
-   LEAD SECTION (REBUILT)
-========================= */
-
+  
 .lead-section {
   background-color: #ffffff;
 }
 
-/* Top hero text block */
 .lead-text-block {
   background-color: #0b1f3a;
   padding: 56px 24px 40px;
@@ -1144,6 +1139,4 @@ hr {
   .lead-row .lead-intro {
     max-width: 100%;
   }
-}
-
 }
