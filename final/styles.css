@@ -954,15 +954,14 @@ hr {
 .lead-row {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 0;
+  justify-content: center;
+  gap: 40px;
   padding: 0;
   background-color: #ffffff;
 }
 
 .lead-row .lead-image {
   flex: 0 0 320px;
-  height: auto;
   margin: 0;
 }
 
@@ -972,12 +971,10 @@ hr {
   object-fit: contain;
   display: block;
 }
-
 .lead-row .lead-intro {
-  flex: 1;
-  padding: 0;
   max-width: 600px;
   margin-left: 24px;
+  margin: 0;
 }
 
 .showcase-section {
