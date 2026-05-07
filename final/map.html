@@ -1,1 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map — Matt's Weight Loss</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
 
+  <header class="site-header">
+    <div class="logo">
+      <a href="#">
+        <img src="images/logo.svg" alt="Matt's Weight Loss" class="site-logo">
+      </a>
+    </div>
+    <nav class="sitenav">
+      <a href="#">Home</a>
+      <a href="https://mc010605.github.io/spr26/web-auth-final/reviews.html">Reviews</a>
+      <a href="https://mc010605.github.io/spr26/web-auth-final/pics.html">Inventory</a>
+      <a href="https://mc010605.github.io/spr26/web-auth-final/map.html" class="active">Map</a>
+      <a href="#">Feature</a>
+      <a href="https://mc010605.github.io/spr26/web-auth-final/about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <h1>Healthy Body Systems Map</h1>
+    
+    <section class="map-section">
+      <div class="map-container">
+        <div class="worldmap">
+          <a href="#brain" class="worldmap-item support-system" id="item-brain">
+            <i class="fa-solid fa-brain"></i>
+            <span class="label">Brain</span>
+            <span class="popup">
+              <strong>Brain</strong><br>
+              The command center of your body, regulating all vital functions including metabolism, appetite, and weight management.
+            </span>
+          </a>
+          
+          <a href="#thyroid" class="worldmap-item support-system" id="item-thyroid">
+            <i class="fa-solid fa-droplet"></i>
+            <span class="label">Thyroid</span>
+            <span class="popup">
+              <strong>Thyroid</strong><br>
+              Produces thyroid hormones that regulate your metabolic rate and energy expenditure.
+            </span>
+          </a>
+          
+          <a href="#heart" class="worldmap-item support-system" id="item-heart">
+            <i class="fa-solid fa-heart"></i>
+            <span class="label">Heart</span>
+            <span class="popup">
+              <strong>Heart</strong><br>
+              Pumps oxygenated blood throughout your body to support all metabolic functions.
+            </span>
+          </a>
+          
+          <a href="#liver" class="worldmap-item metabolic-system" id="item-liver">
+            <i class="fa-solid fa-flask"></i>
+            <span class="label">Liver</span>
+            <span class="popup">
+              <strong>Liver</strong><br>
+              Processes nutrients and detoxifies your body, playing a key role in metabolism and fat processing.
+            </span>
+          </a>
+          
+          <a href="#stomach" class="worldmap-item metabolic-system" id="item-stomach">
+            <i class="fa-solid fa-utensils"></i>
+            <span class="label">Stomach</span>
+            <span class="popup">
+              <strong>Stomach</strong><br>
+              Breaks down food and produces digestive enzymes and hormones that signal fullness.
+            </span>
+          </a>
+
+          <a href="#pancreas" class="worldmap-item metabolic-system" id="item-pancreas">
+            <i class="fa-solid fa-bolt"></i>
+            <span class="label">Pancreas</span>
+            <span class="popup">
+              <strong>Pancreas</strong><br>
+              Produces insulin and digestive enzymes, regulating blood sugar levels.
+            </span>
+          </a>
+          
+          <a href="#muscles" class="worldmap-item metabolic-system" id="item-muscles">
+            <i class="fa-solid fa-person"></i>
+            <span class="label">Skeletal Muscle</span>
+            <span class="popup">
+              <strong>Skeletal Muscle</strong><br>
+              Provides structure and movement, burns calories at rest (metabolic tissue).
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="map-legend">
+        <h3>System Categories</h3>
+        <div class="legend-items">
+          <div class="legend-item">
+            <span class="legend-icon support-system"><i class="fa-solid fa-brain"></i></span>
+            <span class="legend-label">Support Systems</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-icon metabolic-system"><i class="fa-solid fa-bolt"></i></span>
+            <span class="legend-label">Metabolic & Structural Systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location-profiles">
+      <h2>System Profiles</h2>
+
+      <article class="location-profile" id="brain">
+        <div class="profile-header">
+          <h3><i class="fa-solid fa-brain support-icon"></i> Brain</h3>
+          <span class="system-category support-badge">Support System</span>
+        </div>
+        <div class="profile-content">
+          <p><strong>Description:</strong> The command center of your body, regulating all vital functions including metabolism, appetite, and weight management.</p>
+          <p><strong>Role in Weight Loss:</strong> Controls hormones like leptin and ghrelin that regulate hunger and satiety. Proper sleep and stress management support brain health.</p>
+          <div class="rating-section">
+            <h4>Importance for Weight Loss</h4>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="rating-text">Critical (5/5)</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="location-profile" id="thyroid">
+        <div class="profile-header">
+          <h3><i class="fa-solid fa-droplet support-icon"></i> Thyroid</h3>
+          <span class="system-category support-badge">Support System</span>
+        </div>
+        <div class="profile-content">
+          <p><strong>Description:</strong> Produces thyroid hormones that regulate your metabolic rate and energy expenditure.</p>
+          <p><strong>Role in Weight Loss:</strong> A healthy thyroid increases metabolism. TSH levels should be monitored during weight loss programs.</p>
+          <div class="rating-section">
+            <h4>Importance for Weight Loss</h4>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span class="rating-text">Very High (4.5/5)</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="location-profile" id="heart">
+        <div class="profile-header">
+          <h3><i class="fa-solid fa-heart support-icon"></i> Heart</h3>
+          <span class="system-category support-badge">Support System</span>
+        </div>
+        <div class="profile-content">
+          <p><strong>Description:</strong> Pumps oxygenated blood throughout your body to support all metabolic functions.</p>
+          <p><strong>Role in Weight Loss:</strong> Cardiovascular exercise improves heart health and burns calories. Weight loss reduces strain on the cardiovascular system.</p>
+          <div class="rating-section">
+            <h4>Importance for Weight Loss</h4>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span class="rating-text">Very High (4.5/5)</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="location-profile" id="liver">
+        <div class="profile-header">
+          <h3><i class="fa-solid fa-flask metabolic-icon"></i> Liver</h3>
+          <span class="system-category metabolic-badge">Metabolic & Structural System</span>
+        </div>
+        <div class="profile-content">
+          <p><strong>Description:</strong> Processes nutrients and detoxifies your body, playing a key role in metabolism and fat processing.</p>
+          <p><strong>Role in Weight Loss:</strong> A healthy liver efficiently processes fats and regulates lipid metabolism. Supporting liver health enhances weight loss.</p>
+          <div class="rating-section">
+            <h4>Importance for Weight Loss</h4>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span class="rating-text">Very High (4.5/5)</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="location-profile" id="stomach">
+        <div class="profile-header">
+          <h3><i class="fa-solid fa-utensils metabolic-icon"></i> Stomach</h3>
+          <span class="system-category metabolic-badge">Metabolic & Structural System</span>
+        </div>
+        <div class="profile-content">
+          <p><strong>Description:</strong> Breaks down food and produces digestive enzymes and hormones that signal fullness.</p>
+          <p><strong>Role in Weight Loss:</strong> Proper chewing and eating slowly allows stomach signals to reach the brain, promoting satiety.</p>
+          <div class="rating-section">
+            <h4>Importance for Weight Loss</h4>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <span class="rating-text">Very High (4.5/5)</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="location-profile" id="pancreas">
+        <div class="profile-header">
+          <h3><i class="fa-solid fa-bolt metabolic-icon"></i> Pancreas</h3>
+          <span class="system-category metabolic-badge">Metabolic & Structural System</span>
+        </div>
+        <div class="profile-content">
+          <p><strong>Description:</strong> Produces insulin and digestive enzymes, regulating blood sugar levels.</p>
+          <p><strong>Role in Weight Loss:</strong> Stable blood sugar prevents energy crashes and cravings. Managing carbohydrate intake supports pancreatic health.</p>
+          <div class="rating-section">
+            <h4>Importance for Weight Loss</h4>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="rating-text">Critical (5/5)</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="location-profile" id="muscles">
+        <div class="profile-header">
+          <h3><i class="fa-solid fa-person metabolic-icon"></i> Skeletal Muscle</h3>
+          <span class="system-category metabolic-badge">Metabolic & Structural System</span>
+        </div>
+        <div class="profile-content">
+          <p><strong>Description:</strong> Provides structure and movement, burns calories at rest (metabolic tissue).</p>
+          <p><strong>Role in Weight Loss:</strong> Muscle tissue increases basal metabolic rate. Strength training preserves muscle during weight loss and boosts fat burning.</p>
+          <div class="rating-section">
+            <h4>Importance for Weight Loss</h4>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="rating-text">Critical (5/5)</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="rating-legend">
+      <h2>Rating Legend</h2>
+      <div class="legend-content">
+        <div class="rating-legend-item">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span>Critical - Essential for successful weight loss</span>
+        </div>
+        <div class="rating-legend-item">
+          <div class="rating-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <span>Very High - Significantly impacts weight loss journey</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="credits">
+      <h2>Credits</h2>
+      <p><strong>Icons:</strong> Font Awesome 6.5.0 (https://fontawesome.com)</p>
+      <p><strong>Body Diagram:</strong> Custom SVG illustration</p>
+      <p><strong>Content:</strong> Health and nutrition research</p>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 NutriTrack Media Group. All rights reserved.</p>
+      <p>
+        <a href="https://mc010605.github.io/spr26/web-auth-final/reviews.html">Reviews</a> &nbsp;&middot;&nbsp;
+        <a href="https://mc010605.github.io/spr26/web-auth-final/pics.html">Inventory</a> &nbsp;&middot;&nbsp;
+        <a href="https://mc010605.github.io/spr26/web-auth-final/about.html">About</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
