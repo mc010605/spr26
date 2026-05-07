@@ -198,7 +198,7 @@ table {
   border-collapse: collapse;
   margin-top: 12px;
   margin-bottom: 40px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 th, td {
@@ -687,7 +687,7 @@ hr {
 .profile-content p {
   margin: 0;
   color: #2a3f5c;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.6;
 }
 
@@ -778,7 +778,7 @@ hr {
 
 .bio-text p {
     margin: 8px 0 0 0;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.6;
 }
 
@@ -836,7 +836,7 @@ hr {
 .timeline-item p {
     margin: 8px 0 0 0;
     color: #2a3f5c;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.6;
 }
 
