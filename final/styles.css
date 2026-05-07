@@ -1054,10 +1054,6 @@ hr {
     max-width: none;
   }
 
-  .lead-text-block {
-    padding: 36px 20px 28px;
-  }
-  
 .lead-section {
   background-color: #ffffff;
 }
@@ -1094,8 +1090,8 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 64px;
-  padding: 56px 24px;
+  gap: 60px;
+  padding: 60px 24px;
   flex-wrap: wrap;
 }
 
@@ -1103,11 +1099,12 @@ hr {
   flex: 0 1 340px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .lead-row .lead-image img {
-  width: 100%;
-  max-width: 340px;
+  width: 340px;
+  max-width: 100%;
   height: auto;
   display: block;
   border-radius: 10px;
