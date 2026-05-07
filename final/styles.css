@@ -1096,7 +1096,7 @@ hr {
 }
 
 .lead-row .lead-image {
-  flex: 0 1 340px;
+  flex: 0 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
