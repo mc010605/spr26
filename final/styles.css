@@ -234,7 +234,7 @@ tr:hover td {
 .review-header-section {
   display: grid;
   grid-template-columns: 1fr 280px;
-  gap: 28px;
+  gap: 10px;
   align-items: start;
   margin-bottom: 32px;
 }
