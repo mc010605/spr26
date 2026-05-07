@@ -13,7 +13,7 @@ body {
   font-family: 'Figtree', Arial, Helvetica, sans-serif;
   color: #0b1f3a;
   line-height: 1.7;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .site-header {
@@ -269,7 +269,7 @@ tr:hover td {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 13px;
+  font-size: 22px;
   line-height: 1.7;
   color: #2a3f5c;
 }
