@@ -462,7 +462,7 @@ hr {
 }
 
 .legend-icon.metabolic-system {
-  color: #ff9933;
+  color: #b91c1c;
 }
 
 .worldmap {
@@ -497,7 +497,7 @@ hr {
 }
 
 .worldmap-item.metabolic-system i {
-  color: #ff9933;
+  color: #b91c1c;
 }
 
 .worldmap-item:hover i {
