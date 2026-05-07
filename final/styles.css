@@ -935,9 +935,8 @@ hr {
 }
 
 .lead-intro {
-  padding-top: 40px;
-  padding-bottom: 48px;
   background-color: #ffffff;
+  padding: 0;
 }
 
 .lead-intro p {
