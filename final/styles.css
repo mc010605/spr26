@@ -277,7 +277,7 @@ tr:hover td {
   font-size: 20px;
 }
 
-.review-sidebar .review-meta,
+.review-sidebar .review-meta-list,
 .review-sidebar ul,
 .review-sidebar li {
   font-size: 20px;
@@ -304,15 +304,23 @@ tr:hover td {
   text-align: left;
 }
 
-.review-meta {
-  font-size: 14px;
-  color: #4a6785;
-  margin-bottom: 10px;
+.review-meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  color: #0b1f3a;
 }
 
-.review-meta strong {
+.review-meta-list li {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.review-meta-list strong {
   font-size: 20px;
   color: #0b1f3a;
+  font-weight: 700;
 }
 
 .star-rating {
