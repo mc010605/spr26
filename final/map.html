@@ -337,44 +337,48 @@
 <script>
   function pointArrows() {
     const items = document.querySelectorAll('.bodypart-item[data-target]');
-    console.log('Found items:', items.length);
-    
+  
     items.forEach(el => {
       const targetId = el.dataset.target;
       const target = document.getElementById(targetId);
-      const arrow = el.querySelector('.bodypart-arrow');
-      
-      console.log(`Processing ${el.id} -> ${targetId}`, { hasTarget: !!target, hasArrow: !!arrow });
-      
-      if (!target || !arrow) {
-        console.warn(`Missing target or arrow for ${el.id}`);
-        return;
-      }
-      
+      const svg = el.querySelector('.bodypart-arrow');
+      const line = svg.querySelector('.arrow-line');
+  
+      if (!target || !svg || !line) return;
+  
       const from = el.getBoundingClientRect();
       const to = target.getBoundingClientRect();
-      
-      const angle = Math.atan2(
-        to.top - from.top,
-        to.left - from.left
-      ) * (180 / Math.PI) + 90;
-      
-      console.log(`${targetId}: angle = ${angle}°`);
-      
-      arrow.style.transform = `translateX(-50%) rotate(${angle}deg)`;
-      arrow.style.transformOrigin = 'center center';
+  
+      const fromX = from.left + from.width / 2;
+      const fromY = from.top + from.height / 2;
+  
+      const toX = to.left + to.width / 2;
+      const toY = to.top + to.height / 2;
+  
+      const dx = toX - fromX;
+      const dy = toY - fromY;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+  
+      const angle = Math.atan2(dy, dx) * (180 / Math.PI);
+  
+      svg.setAttribute("width", distance);
+      svg.setAttribute("height", 12);
+  
+      line.setAttribute("x1", 0);
+      line.setAttribute("y1", 6);
+      line.setAttribute("x2", distance - 10);
+      line.setAttribute("y2", 6);
+  
+      svg.style.left = fromX + "px";
+      svg.style.top = fromY + "px";
+  
+      svg.style.transform = `rotate(${angle}deg) translateY(-50%)`;
+      svg.style.transformOrigin = "0 50%";
     });
   }
   
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      setTimeout(pointArrows, 100);
-    });
-  } else {
-    setTimeout(pointArrows, 100);
-  }
-
-  window.addEventListener('resize', pointArrows);
+  window.addEventListener("load", pointArrows);
+  window.addEventListener("resize", pointArrows);
 </script>
 
 </body>
