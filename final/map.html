@@ -98,29 +98,71 @@
         </div>
 
         <div class="map-right">
-          <div class="bodypart-item" id="image-brain">
+          <div class="bodypart-item" id="image-brain" data-target="item-brain">
             <img src="images/brain.jpg" alt="Brain" class="bodypart-image">
-            <div class="bodypart-arrow"></div>
+            <svg class="bodypart-arrow" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="arrowhead-brain" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                  <polygon points="0 0, 10 3, 0 6" fill="#3b78b7" />
+                </marker>
+              </defs>
+              <line x1="15" y1="0" x2="15" y2="24" stroke="#3b78b7" stroke-width="2" marker-end="url(#arrowhead-brain)" />
+            </svg>
           </div>
-          <div class="bodypart-item" id="image-thyroid">
+          <div class="bodypart-item" id="image-thyroid" data-target="item-thyroid">
             <img src="images/thyroid.jpg" alt="Thyroid" class="bodypart-image">
-            <div class="bodypart-arrow"></div>
+            <svg class="bodypart-arrow" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="arrowhead-thyroid" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                  <polygon points="0 0, 10 3, 0 6" fill="#3b78b7" />
+                </marker>
+              </defs>
+              <line x1="15" y1="0" x2="15" y2="24" stroke="#3b78b7" stroke-width="2" marker-end="url(#arrowhead-thyroid)" />
+            </svg>
           </div>
-          <div class="bodypart-item" id="image-heart">
+          <div class="bodypart-item" id="image-heart" data-target="item-heart">
             <img src="images/heart.jpg" alt="Heart" class="bodypart-image">
-            <div class="bodypart-arrow"></div>
+            <svg class="bodypart-arrow" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="arrowhead-heart" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                  <polygon points="0 0, 10 3, 0 6" fill="#3b78b7" />
+                </marker>
+              </defs>
+              <line x1="15" y1="0" x2="15" y2="24" stroke="#3b78b7" stroke-width="2" marker-end="url(#arrowhead-heart)" />
+            </svg>
           </div>
-          <div class="bodypart-item" id="image-liver">
+          <div class="bodypart-item" id="image-liver" data-target="item-liver">
             <img src="images/liver.jpg" alt="Liver" class="bodypart-image">
-            <div class="bodypart-arrow"></div>
+            <svg class="bodypart-arrow" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="arrowhead-liver" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                  <polygon points="0 0, 10 3, 0 6" fill="#3b78b7" />
+                </marker>
+              </defs>
+              <line x1="15" y1="0" x2="15" y2="24" stroke="#3b78b7" stroke-width="2" marker-end="url(#arrowhead-liver)" />
+            </svg>
           </div>
-          <div class="bodypart-item" id="image-stomach">
+          <div class="bodypart-item" id="image-stomach" data-target="item-stomach">
             <img src="images/stomach.jpg" alt="Stomach" class="bodypart-image">
-            <div class="bodypart-arrow"></div>
+            <svg class="bodypart-arrow" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="arrowhead-stomach" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                  <polygon points="0 0, 10 3, 0 6" fill="#3b78b7" />
+                </marker>
+              </defs>
+              <line x1="15" y1="0" x2="15" y2="24" stroke="#3b78b7" stroke-width="2" marker-end="url(#arrowhead-stomach)" />
+            </svg>
           </div>
-          <div class="bodypart-item" id="image-pancreas">
+          <div class="bodypart-item" id="image-pancreas" data-target="item-pancreas">
             <img src="images/pancreas.jpg" alt="Pancreas" class="bodypart-image">
-            <div class="bodypart-arrow"></div>
+            <svg class="bodypart-arrow" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <marker id="arrowhead-pancreas" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                  <polygon points="0 0, 10 3, 0 6" fill="#3b78b7" />
+                </marker>
+              </defs>
+              <line x1="15" y1="0" x2="15" y2="24" stroke="#3b78b7" stroke-width="2" marker-end="url(#arrowhead-pancreas)" />
+            </svg>
           </div>
         </div>
       </div>
@@ -314,29 +356,44 @@
 
 <script>
   function pointArrows() {
-    try {
-      document.querySelectorAll('.bodypart-item[data-target]').forEach(el => {
-        const target = document.getElementById(el.dataset.target);
-        const arrow = el.querySelector('.bodypart-arrow');
-        
-        if (!target || !arrow) return;
-        
-        const from = el.getBoundingClientRect();
-        const to = target.getBoundingClientRect();
-        
-        const angle = Math.atan2(
-          to.top - from.top,
-          to.left - from.left
-        ) * (180 / Math.PI) + 90;
-        
-        arrow.style.transform = `translateX(-50%) rotate(${angle}deg)`;
-      });
-    } catch (err) {
-      console.error('Arrow error:', err);
-    }
+    const items = document.querySelectorAll('.bodypart-item[data-target]');
+    console.log('Found items:', items.length);
+    
+    items.forEach(el => {
+      const targetId = el.dataset.target;
+      const target = document.getElementById(targetId);
+      const arrow = el.querySelector('.bodypart-arrow');
+      
+      console.log(`Processing ${el.id} -> ${targetId}`, { hasTarget: !!target, hasArrow: !!arrow });
+      
+      if (!target || !arrow) {
+        console.warn(`Missing target or arrow for ${el.id}`);
+        return;
+      }
+      
+      const from = el.getBoundingClientRect();
+      const to = target.getBoundingClientRect();
+      
+      const angle = Math.atan2(
+        to.top - from.top,
+        to.left - from.left
+      ) * (180 / Math.PI) + 90;
+      
+      console.log(`${targetId}: angle = ${angle}°`);
+      
+      arrow.style.transform = `translateX(-50%) rotate(${angle}deg)`;
+      arrow.style.transformOrigin = 'center center';
+    });
   }
   
-  window.addEventListener('load', pointArrows);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(pointArrows, 100);
+    });
+  } else {
+    setTimeout(pointArrows, 100);
+  }
+
   window.addEventListener('resize', pointArrows);
 </script>
 
