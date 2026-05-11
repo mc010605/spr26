@@ -312,5 +312,37 @@
     </div>
   </footer>
 
+    <script>
+    function calculateAndRotateArrows() {
+      const bodypartItems = document.querySelectorAll('.bodypart-item[data-target]');
+      
+      bodypartItems.forEach(item => {
+        const targetId = item.dataset.target;
+        const targetIcon = document.getElementById(targetId);
+        const arrow = item.querySelector('.bodypart-arrow');
+        
+        if (targetIcon && arrow) {
+          const itemRect = item.getBoundingClientRect();
+          const iconRect = targetIcon.getBoundingClientRect();
+          
+          const itemCenterX = itemRect.left + itemRect.width / 2;
+          const itemCenterY = itemRect.top + itemRect.height / 2;
+          const iconCenterX = iconRect.left + iconRect.width / 2;
+          const iconCenterY = iconRect.top + iconRect.height / 2;
+          
+          const deltaX = iconCenterX - itemCenterX;
+          const deltaY = iconCenterY - itemCenterY;
+          const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI) + 90; // +90 to point from top of arrow
+          
+          arrow.style.transform = `translateX(-50%) rotate(${angle}deg)`;
+        }
+      });
+    }
+    
+    document.addEventListener('DOMContentLoaded', calculateAndRotateArrows);
+    
+    window.addEventListener('resize', calculateAndRotateArrows);
+  </script>
+
 </body>
 </html>
