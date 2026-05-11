@@ -412,13 +412,14 @@ hr {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 .map-section {
   margin-bottom: 40px;
 }
 
 .map-container {
-  position: relative;
+  position: relative;         
+  width: 980px;                
+  height: 938px;            
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -426,6 +427,7 @@ hr {
   background-color: #ffffff;
   padding: 40px 20px;
   border: 2px solid #c9def2;
+  overflow: hidden;      
 }
 
 .map-left {
@@ -463,8 +465,8 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1200px;
-  height: 900px;
+  width: 980px;  
+  height: 938px; 
   pointer-events: none;
   overflow: visible;
   z-index: 10;
@@ -480,6 +482,12 @@ hr {
   .map-container {
     grid-template-columns: 1fr;
     gap: 40px;
+    width: 100%;   
+    height: auto; 
+  }
+
+  .arrow {
+    display: none;
   }
 
   .map-right {
