@@ -98,71 +98,65 @@
         </div>
 
         <div class="map-right">
-          <div class="bodypart-item" id="image-brain" data-target="item-brain">
-            <img src="images/brain.jpg" alt="Brain" class="bodypart-image">
-            <svg class="bodypart-arrow" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
-                  <polygon points="0 0, 10 5, 0 10" fill="#3b78b7" />
-                </marker>
-              </defs>
-              <line class="arrow-line" stroke="#3b78b7" stroke-width="4" marker-end="url(#arrowhead)" />
-            </svg>
-          </div>
-        
-          <div class="bodypart-item" id="image-thyroid" data-target="item-thyroid">
-            <img src="images/thyroid.jpg" alt="Thyroid" class="bodypart-image">
-            <svg class="bodypart-arrow" xmlns="http://www.w3.org/2000/svg">
-              <line class="arrow-line" stroke="#3b78b7" stroke-width="4" marker-end="url(#arrowhead)" />
-            </svg>
-          </div>
-        
-          <div class="bodypart-item" id="image-heart" data-target="item-heart">
-            <img src="images/heart.jpg" alt="Heart" class="bodypart-image">
-            <svg class="bodypart-arrow" xmlns="http://www.w3.org/2000/svg">
-              <line class="arrow-line" stroke="#3b78b7" stroke-width="4" marker-end="url(#arrowhead)" />
-            </svg>
-          </div>
-        
-          <div class="bodypart-item" id="image-liver" data-target="item-liver">
-            <img src="images/liver.jpg" alt="Liver" class="bodypart-image">
-            <svg class="bodypart-arrow" xmlns="http://www.w3.org/2000/svg">
-              <line class="arrow-line" stroke="#3b78b7" stroke-width="4" marker-end="url(#arrowhead)" />
-            </svg>
-          </div>
-        
-          <div class="bodypart-item" id="image-stomach" data-target="item-stomach">
-            <img src="images/stomach.jpg" alt="Stomach" class="bodypart-image">
-            <svg class="bodypart-arrow" xmlns="http://www.w3.org/2000/svg">
-              <line class="arrow-line" stroke="#3b78b7" stroke-width="4" marker-end="url(#arrowhead)" />
-            </svg>
-          </div>
-        
-          <div class="bodypart-item" id="image-pancreas" data-target="item-pancreas">
-            <img src="images/pancreas.jpg" alt="Pancreas" class="bodypart-image">
-            <svg class="bodypart-arrow" xmlns="http://www.w3.org/2000/svg">
-              <line class="arrow-line" stroke="#3b78b7" stroke-width="4" marker-end="url(#arrowhead)" />
-            </svg>
-          </div>
+          <img id="image-brain" src="images/brain.jpg" class="bodypart-image">
+          <img id="image-thyroid" src="images/thyroid.jpg" class="bodypart-image">
+          <img id="image-heart" src="images/heart.jpg" class="bodypart-image">
+          <img id="image-liver" src="images/liver.jpg" class="bodypart-image">
+          <img id="image-pancreas" src="images/pancreas.jpg" class="bodypart-image">
+          <img id="image-stomach" src="images/stomach.jpg" class="bodypart-image">
         </div>
-
-
-      <div class="map-legend">
-        <h3>System Categories</h3>
-        <div class="legend-items">
-          <div class="legend-item">
-            <span class="legend-icon support-system"><i class="fa-solid fa-brain"></i></span>
-            <span class="legend-label">Support Systems</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-icon metabolic-system"><i class="fa-solid fa-bolt"></i></span>
-            <span class="legend-label">Metabolic & Structural Systems</span>
-          </div>
-        </div>
+    
+        <svg width="0" height="0">
+          <defs>
+            <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+              <polygon points="0 0, 12 6, 0 12" fill="#3b78b7" />
+            </marker>
+          </defs>
+        </svg>
+      
+        <svg class="arrow brain-arrow">
+          <line x1="775" y1="516" x2="471" y2="308" stroke="#3b78b7" stroke-width="4" marker-end="url(#arrowhead)" />
+        </svg>
+      
+        <svg class="arrow thyroid-arrow">
+          <line x1="932" y1="518" x2="471" y2="381" stroke="#3b78b7" stroke-width="4" marker-end="url(#arrowhead)" />
+        </svg>
+      
+        <svg class="arrow heart-arrow">
+          <line x1="1084" y1="521" x2="490" y2="452" stroke="#3b78b7" stroke-width="4" marker-end="url(#arrowhead)" />
+        </svg>
+      
+        <svg class="arrow liver-arrow">
+          <line x1="773" y1="673" x2="428" y2="517" stroke="#3b78b7" stroke-width="4" marker-end="url(#arrowhead)" />
+        </svg>
+      
+        <svg class="arrow pancreas-arrow">
+          <line x1="935" y1="669" x2="471" y2="509" stroke="#3b78b7" stroke-width="4" marker-end="url(#arrowhead)" />
+        </svg>
+      
+        <svg class="arrow stomach-arrow">
+          <line x1="1092" y1="676" x2="471" y2="522" stroke="#3b78b7" stroke-width="4" marker-end="url(#arrowhead)" />
+        </svg>
+      
       </div>
-    </section>
-
-    <section id="location-profiles">
+  
+  
+        <div class="map-legend">
+          <h3>System Categories</h3>
+          <div class="legend-items">
+            <div class="legend-item">
+              <span class="legend-icon support-system"><i class="fa-solid fa-brain"></i></span>
+              <span class="legend-label">Support Systems</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-icon metabolic-system"><i class="fa-solid fa-bolt"></i></span>
+              <span class="legend-label">Metabolic & Structural Systems</span>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section id="location-profiles">
       <h2>System Profiles</h2>
 
       <article class="location-profile" id="brain">
