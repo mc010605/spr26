@@ -460,16 +460,23 @@ hr {
 
 .bodypart-arrow {
   position: absolute;
-  bottom: -20px;
   left: 50%;
-  width: 80px;
-  height: 80px;
+  bottom: -10px;
+  width: 120px;
+  height: 120px;
   transform: translateX(-50%);
   transform-origin: center center;
+  overflow: visible;
   pointer-events: none;
   z-index: 10;
 }
 
+.arrow-line {
+  x1: 60;
+  y1: 0;
+  x2: 60;
+  y2: 100;
+}
 
 .map-legend {
   margin-top: 32px;
