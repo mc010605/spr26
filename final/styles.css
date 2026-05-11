@@ -459,8 +459,12 @@ hr {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.bodypart-arrow {
+.arrow {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  height: 900px;
   pointer-events: none;
   overflow: visible;
   z-index: 10;
@@ -470,6 +474,24 @@ hr {
   stroke: #3b78b7;
   stroke-width: 4;
   marker-end: url(#arrowhead);
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .map-right {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery,
+  .gallery-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .map-legend {
