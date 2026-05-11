@@ -312,37 +312,33 @@
     </div>
   </footer>
 
-    <script>
-    function calculateAndRotateArrows() {
-      const bodypartItems = document.querySelectorAll('.bodypart-item[data-target]');
-      
-      bodypartItems.forEach(item => {
-        const targetId = item.dataset.target;
-        const targetIcon = document.getElementById(targetId);
-        const arrow = item.querySelector('.bodypart-arrow');
+<script>
+  function pointArrows() {
+    try {
+      document.querySelectorAll('.bodypart-item[data-target]').forEach(el => {
+        const target = document.getElementById(el.dataset.target);
+        const arrow = el.querySelector('.bodypart-arrow');
         
-        if (targetIcon && arrow) {
-          const itemRect = item.getBoundingClientRect();
-          const iconRect = targetIcon.getBoundingClientRect();
-          
-          const itemCenterX = itemRect.left + itemRect.width / 2;
-          const itemCenterY = itemRect.top + itemRect.height / 2;
-          const iconCenterX = iconRect.left + iconRect.width / 2;
-          const iconCenterY = iconRect.top + iconRect.height / 2;
-          
-          const deltaX = iconCenterX - itemCenterX;
-          const deltaY = iconCenterY - itemCenterY;
-          const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI) + 90; // +90 to point from top of arrow
-          
-          arrow.style.transform = `translateX(-50%) rotate(${angle}deg)`;
-        }
+        if (!target || !arrow) return;
+        
+        const from = el.getBoundingClientRect();
+        const to = target.getBoundingClientRect();
+        
+        const angle = Math.atan2(
+          to.top - from.top,
+          to.left - from.left
+        ) * (180 / Math.PI) + 90;
+        
+        arrow.style.transform = `translateX(-50%) rotate(${angle}deg)`;
       });
+    } catch (err) {
+      console.error('Arrow error:', err);
     }
-    
-    document.addEventListener('DOMContentLoaded', calculateAndRotateArrows);
-    
-    window.addEventListener('resize', calculateAndRotateArrows);
-  </script>
+  }
+  
+  window.addEventListener('load', pointArrows);
+  window.addEventListener('resize', pointArrows);
+</script>
 
 </body>
 </html>
